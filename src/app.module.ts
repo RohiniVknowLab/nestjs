@@ -6,7 +6,7 @@ import { AppService } from './app.service';
 import { SourceModule } from './sources/sources.module';
 
 @Module({
-  imports: [SourceModule, MongooseModule.forRoot('mongodb://localhost:27017/VKnowLab')],
+  imports: [SourceModule, MongooseModule.forRoot('mongodb://157.46.47.34:27017/VKnowLab')],
   controllers: [AppController],
   providers: [AppService],
 })
