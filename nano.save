@@ -1,0 +1,8 @@
+sudo apt-get update
+sudo apt-get install git-core
+git --version
+git clone https://github.com/RohiniVknowLab/nestjs.git
+cd nestjs
+git pull origin master
+npm install 
+npm run start:dev

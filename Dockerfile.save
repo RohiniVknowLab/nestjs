@@ -1,0 +1,15 @@
+FROM node:10-alpine
+
+RUN mkdir -p /home/rohini/Projects/NestJs/demo/node_modules && chown -R rohini:rohini /home/rohini/Projects/NestJs/demo
+
+WORKDIR /home/rohini/Projects/NestJs/demo
+
+COPY package*.json ./
+
+USER rohini
+
+COPY --chown=rohini:rohini . .
+
+EXPOSE 8080
+
+CMD [ "npm", "run" ,"start:dev" ]
